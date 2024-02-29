@@ -1,0 +1,238 @@
+<!DOCTYPE html><!--  This site was created in Webflow. https://www.webflow.com  -->
+<!--  Last Published: Wed Feb 28 2024 03:40:20 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="65de56f76e6def01f33aa0f3" data-wf-site="65de56f66e6def01f33aa04f">
+<head>
+  <meta charset="utf-8">
+  <title>Sean&#x27;s ROI Site</title>
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="css/seans-roi-site.webflow.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+  <script type="text/javascript">WebFont.load({  google: {    families: ["Roboto:300,regular,500,700:latin,cyrillic"]  }});</script>
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="images/webclip.png" rel="apple-touch-icon">
+  <style type="text/css">
+.ui-slider {
+	position: relative;
+	text-align: left;
+}
+.ui-slider .ui-slider-handle {
+	position: absolute;
+	z-index: 2;
+	cursor: default;
+	-ms-touch-action: none;
+	touch-action: none;
+}
+.ui-slider .ui-slider-range {
+	position: absolute;
+	z-index: 1;
+	display: block;
+	background-position: 0 0;
+}
+/* support: IE8 - See #6727 */
+.ui-slider.ui-state-disabled .ui-slider-handle,
+.ui-slider.ui-state-disabled .ui-slider-range {
+	filter: inherit;
+}
+.ui-slider-horizontal {
+	height: .8em;
+}
+.ui-slider-horizontal .ui-slider-handle {
+	margin-left: -.6em;
+}
+.ui-slider-horizontal .ui-slider-range {
+	top: 0;
+	height: 100%;
+}
+.ui-slider-horizontal .ui-slider-range-min {
+	left: 0;
+}
+.ui-slider-horizontal .ui-slider-range-max {
+	right: 0;
+}
+input {
+    background-color: #2c3844;
+    color: #34a3db;
+}
+#tarif {
+    background-color: #fff;
+    color: #444;
+}
+span { 
+    color: #91e8fc;
+}
+  </style>
+</head>
+<body>
+  <div id="Main-block" class="main-section">
+  <a href="#" data-ix="new-interaction" class="calculator-open w-button">Открыть калькулятор</a>
+  </div>
+  <div id="calculator" class="calculator-section">
+    <div class="calculator-container">
+      <h2 class="calculator-heading">Webflow <span class="jquery">jQuery</span> ROI calculator </h2>
+      <div class="calculator-form w-form">
+        <form id="email-form" name="email-form" data-name="Email Form" method="get" class="form w-clearfix" data-wf-page-id="65de56f76e6def01f33aa0f3" data-wf-element-id="6605d7f3-b336-9c0e-8b34-4853b25b56a7">
+          <div class="calculator-slide-block w-clearfix"><label for="node" class="field-label">Clients per month</label>
+            <div class="calculator-left-frame"></div>
+            <div id="client-slider" class="ui-widget-content">
+              <a href="#" class="ui-slider-handle"> </a>
+            </div><input class="calculator-slider-input w-input" maxlength="256" name="field" data-name="field" placeholder="" type="text" id="client">
+            <div id="client-output" class="input-slider">   1</div>
+            <div class="si"> </div><label for="node" class="calcelator-labels">average receipt</label>
+            <div class="calculator-left-frame"></div>
+            <div id="check-slider" class="ui-widget-content">
+              <a href="#" class="ui-slider-handle"> </a>
+            </div>
+            <div id="check-output" class="input-slider">   1</div>
+            <div class="si">  $</div><input class="calculator-slider-input w-input" maxlength="256" name="field" data-name="field" placeholder="" type="email" id="check"><label for="check" class="calcelator-labels">Time to use terminal</label>
+            <div class="calculator-left-frame"></div>
+            <div id="date-slider" class="ui-widget-content">
+              <a href="#" class="ui-slider-handle"> </a>
+            </div>
+            <div id="date-output" class="input-slider">   1</div>
+            <div class="si">  $</div><input class="calculator-slider-input w-input" maxlength="256" name="field" data-name="field" placeholder="" type="email" id="date">
+          </div>
+          <div class="calculator-output-block w-clearfix"><label for="tarif" class="calclator-traif-label">Plan</label><select id="tarif" name="field" data-name="field" class="calculator-select w-select">
+              <option value="5">Base</option>
+              <option value="3.3">PRO</option>
+              <option value="2.2">Corporate</option>
+            </select>
+            <div class="grey-line"></div>
+            <div class="calculator-revenue-output-block"><label for="" class="revenue-label">your net income:</label>
+              <p id="revenue" class="revenue-pragraph"><span class="calculator-revenue">1212</span></p>
+              <div class="si revenue">  $</div>
+            </div>
+            <div class="calculator-other-output-block"><label for="" class="calculator-output-label-smoll">Revenue Growth</label>
+              <p id="RevenueGrownthTerminal" class="calculator-output-small"><span class="calculator-revenue small">2</span></p>
+              <div class="si revenue">  $</div>
+            </div>
+            <div class="calculator-other-output-block"><label for="" class="calculator-output-label-smoll _2">Rent payment</label>
+              <p id="rent" class="calculator-output-small"><span class="calculator-revenue small">1212</span></p>
+              <div class="si revenue"> $</div>
+            </div>
+            <div id="Calculator-block" class="calculator-other-output-block"><label for="" class="calculator-output-label-smoll _2">Transactions percent</label>
+              <p id="tarifpercentage" class="calculator-output-small"><span class="calculator-revenue small">1212</span></p>
+              <div class="si revenue">  %</div>
+            </div>
+          </div>
+        </form>
+        <div class="w-form-done">
+          <p>Thank you! Your submission has been received!</p>
+        </div>
+        <div class="w-form-fail">
+          <p>Oops! Something went wrong while submitting the form</p>
+        </div>
+      </div>
+      <a href="#Main-block" data-ix="new-interaction-2" id="Close-link" class="w-hidden-main w-hidden-medium w-hidden-small w-hidden-tiny w-button">Закрыть калькулятор</a>
+    </div>
+  </div>
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=65de56f66e6def01f33aa04f" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="js/webflow.js" type="text/javascript"></script>
+  <script type="text/javascript" src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+  <script>
+jQuery(function() {
+    var tarif = 5,
+        client = 16,
+        revenue = 0,
+        check = 24357,
+        date = 4,
+        RevenueGrowth = 0,
+        rent = 0,
+        percentage = 0,
+        ClientsGrowth = 0,
+    	  RentPerMonth = 0,
+        TransactionCosts = 0,
+        RevenueGrownthTerminal = 0;
+    function recount() {
+        ClientsGrowth = client * 0.3;
+        ClientsGrowth = +ClientsGrowth.toFixed();
+        rent = String(date * RentPerMonth).replace(/(\d)(?=(\d{3})+(\D|$))/g, '$1 ');
+        TransactionCosts = ((client + ClientsGrowth) * check * date) / 100 * tarif;
+        RevenueGrownthTerminal = (check * date * ClientsGrowth - TransactionCosts);
+        TransactionCosts = +TransactionCosts.toFixed();
+        revenue = (((client + ClientsGrowth) * date * check) - TransactionCosts).toFixed();
+        revenue = revenue.replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ');
+        RevenueGrownthTerminal = RevenueGrownthTerminal.toFixed();
+        RevenueGrownthTerminal = RevenueGrownthTerminal.replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ');
+        jQuery("#client-output").html(client);
+        check = String(check).replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ');
+        jQuery("#check-output").html(check);
+        check = +(check).replace(/\s/g, '')
+        jQuery("#date-output").html(date);
+        jQuery("#revenue span").html(revenue);
+        jQuery("#rent span").html(rent);
+        jQuery("#RevenueGrownthTerminal span").html(RevenueGrownthTerminal);
+        jQuery("#tarifpercentage span").html(tarif);
+};
+	recount();
+    jQuery('#tarif').change(function() {
+        tarif = jQuery('#tarif option:selected').val();
+        RentPerMonth = 0;
+        if (tarif == 3.3) {
+        RentPerMonth = 300;
+        } else if (tarif == 2.2) {
+            RentPerMonth = 900;
+        }
+        recount();
+    });
+    $(document).on("change keyup", "#client", function() {
+        client = +$(this).val();
+        $("#client-slider").slider("value", client);
+        recount();
+    });
+    $(document).on("change keyup", "#check", function() {
+        check = +$(this).val();
+        $("#check-slider").slider("value", check);
+        recount();
+    });
+    $(document).on("change keyup", "#date", function() {
+        date = +$(this).val();
+        $("#date-slider").slider("value", date);
+        recount();
+    });
+});
+$(function() {
+    $("#client-slider").slider({
+        range: "min",
+        value: 16,
+        min: 2,
+        max: 300,
+        slide: function(event, ui) {
+            $('#client').val(ui.value).trigger("change");
+        }
+    });
+    $("#client").val($("#client-slider").slider("value"));
+});
+$(function() {
+    $("#check-slider").slider({
+        range: "min",
+        value: 24357,
+        min: 100,
+        max: 500000,
+        slide: function(event, ui) {
+            $("#check").val(ui.value).trigger("change");
+        }
+    });
+    $("#check").val($("#check-slider").slider("value"));
+});
+$(function() {
+    $("#date-slider").slider({
+        range: "min",
+        value: 4,
+        min: 1,
+        max: 60,
+        slide: function(event, ui) {
+            $("#date").val(ui.value).trigger("change");
+        }
+    });
+    $("#date").val($("#date-slider").slider("value"));
+});
+</script>
+</body>
+</html>
